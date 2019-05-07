@@ -6,7 +6,7 @@ Learning bash/shell scripting
     ```shell
     sudo apt-get install intotify-tools
     ```
-  - __Increase max watched folder count__
+  - __[Increasing Max inotify watchers](https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers)__
     ```shell
     echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
     ```
