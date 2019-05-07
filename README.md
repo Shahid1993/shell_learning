@@ -6,6 +6,10 @@ Learning bash/shell scripting
     ```shell
     sudo apt-get install intotify-tools
     ```
+  - __Increase max watched folder count__
+    ```shell
+    echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+    ```
 
 
 
