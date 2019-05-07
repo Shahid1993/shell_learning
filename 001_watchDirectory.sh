@@ -13,7 +13,7 @@ inotifywait -m -r /home/codemantra/Documents/OAT/RD/PDFixSDKSample-java-master/s
 	    echo "$file is a directory";
     	else
 	    echo "$file is a file";
-	    if [ "$extension" == "pdf" ]; then
+	    if [[ "$file" =~ .*pdf$ ]]; then
 	    	echo "file is pdf...";
 		inputPath="$(cd "$(dirname "$path")"; pwd)/$(basename "$path")";
 		outputPath=${inputPath/\/sourcepdf/\/inputpdf};
